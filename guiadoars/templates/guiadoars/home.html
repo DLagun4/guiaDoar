@@ -1,0 +1,88 @@
+{% extends "guiadoars/base.html" %}
+
+{% block content %}
+
+<div class="text-center py-5">
+    <h1 class="display-4 fw-bold">GuiaDoar</h1>
+    <p class="lead">Encontre instituições próximas para fazer doações.</p>
+
+    <a href="#" class="btn btn-primary btn-lg mt-3">
+        Doe agora!
+    </a>
+</div>
+
+
+<div class="row text-center mt-5">
+
+    <div class="col-md-4 mb-4">
+        <div class="card shadow-sm h-100">
+            <div class="card-body">
+                <h4>🍞 Alimentos</h4>
+                <p>Doe alimentos para instituições que ajudam famílias em necessidade.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card shadow-sm h-100">
+            <div class="card-body">
+                <h4>👕 Roupas</h4>
+                <p>Ajude com roupas em bom estado para pessoas que precisam.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card shadow-sm h-100">
+            <div class="card-body">
+                <h4>📚 Livros</h4>
+                <p>Compartilhe conhecimento doando livros para projetos sociais.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="text-center mt-5 p-5 bg-light rounded">
+    <h3>Faça a diferença hoje</h3>
+    <p>Uma pequena doação pode mudar a vida de alguém.</p>
+
+    <a href="#" class="btn btn-success">
+        Ver instituições
+    </a>
+</div>
+
+<h2 class="mt-5 mb-4">Instituições cadastradas</h2>
+
+<div class="row">
+
+{% for instituicao in instituicoes %}
+
+<div class="col-md-4 mb-4">
+    <div class="card shadow h-100">
+        <div class="card-body">
+
+            <h5 class="card-title">{{ instituicao.nome }}</h5>
+
+            <p class="card-text">
+                {{ instituicao.descricao }}
+            </p>
+
+            <p>
+                <strong>Cidade:</strong> {{ instituicao.cidade }}
+            </p>
+
+            <span class="badge bg-success">
+                {{ instituicao.tipo_doacao }}
+            </span>
+
+        </div>
+    </div>
+</div>
+
+{% endfor %}
+
+</div>
+
+{% endblock %}
