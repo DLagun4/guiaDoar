@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+
+# Ambiente virtual
+venv/
+env/
+.venv/
+
+# Django
+/media/
+/static/
+*.mo
+*.pot
+*.po
+
+# IDE e editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Arquivos de ambiente
+.env
+.env.local
+
+# Testes e cobertura
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Arquivos de pacote
+*.egg-info/
+dist/
+build/
