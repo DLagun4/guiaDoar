@@ -1,6 +1,20 @@
-.hero {
-    background: linear-gradient(135deg, #597dfe, #fcf645);
-    color: white;
-    padding: 80px 20px;
-    border-radius: 10px;
+body{
+    background-color: #4facfc;
+}
+
+h1{
+    color: #ffffff;
+}
+.hero{
+    background: linear-gradient(135deg,#6bb6f7,#6bb6f7);
+    color:rgb(0, 0, 0);
+    border-radius:10px;
+}
+.card-hover{
+transition:0.3s;
+}
+
+.card-hover:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 20px rgba(0,0,0,0.15);
 }
